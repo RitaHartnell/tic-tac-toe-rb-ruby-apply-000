@@ -99,10 +99,11 @@ end
 
 def winner(board)
    if over?(board)
-     thing = won?(board)
-     if thing == "draw"
+     this = over?(board)
+     if this == "draw"
        return nil
      end
+     thing = won?(board)
      return board[thing[0]]
    end
    return nil
