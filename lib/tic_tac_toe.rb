@@ -110,7 +110,14 @@ end
 
 # Define your play method below
 def play(board)
-  while !done?(board)
+  while !over?(board)
     turn(board)
+  end
+
+  if draw?(board)
+    puts "This is a draw"
+  else
+    winny = winner(board)
+    puts "Congratulations #{winny}!"
   end
 end
