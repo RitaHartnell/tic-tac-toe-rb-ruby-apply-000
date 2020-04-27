@@ -99,8 +99,7 @@ end
 
 def winner(board)
    if over?(board)
-     this = over?(board)
-     if this == "draw"
+     if draw?(board)
        return nil
      end
      thing = won?(board)
