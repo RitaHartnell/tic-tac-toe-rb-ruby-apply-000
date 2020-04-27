@@ -35,13 +35,6 @@ def turn(board)
   end
 end
 
-# Define your play method below
-def play(board)
-  while !done?(board)
-    turn(board)
-  end
-end
-
 def turn_count(board)
   count = 0
   board.each{|char|
@@ -113,4 +106,11 @@ def winner(board)
      return board[thing[0]]
    end
    return nil
+end
+
+# Define your play method below
+def play(board)
+  while !done?(board)
+    turn(board)
+  end
 end
