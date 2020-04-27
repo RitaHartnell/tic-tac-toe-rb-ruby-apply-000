@@ -103,7 +103,9 @@ def winner(board)
        return nil
      end
      thing = won?(board)
-     return board[thing[0]]
+     if thing
+       return board[thing[0]]
+     end
    end
    return nil
 end
