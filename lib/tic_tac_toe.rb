@@ -37,7 +37,7 @@ end
 
 # Define your play method below
 def play(board)
-  while !winner(board)
+  while !done?(board)
     turn(board)
   end
 end
